@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #7f525288;
+  margin: 16px;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+main {
+  margin: 16px;
+  font-family: poppins;
+  padding-bottom: 32px;
+}
+.container {
+  margin-inline: auto;
+  max-width: 850px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 64px;
+  color: green;
+}
+.title span {
+  color: rgb(86, 6, 6);
+}
+.app-container {
+  margin-top: 20px;
+  background-color: #fbfbfb;
+  max-width: 530px;
+  width: 100%;
+  border-radius: 15px;
+  padding: 20px 32px;
+  box-shadow: 0 0 4px black;
+}
+.app-h2 {
+  max-width: max-content;
+}
+/* .sun{
+  position: absolute;
+} */
+.sun-icon1 {
+  vertical-align: middle;
+  width: 35px;
+  position: relative;
+  animation: rotate 2000ms linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.sun-icon2 {
+  left: 32.46%;
+  top: 23.95%;
+  width: 15px;
+  position: absolute;
+}
+.label {
+  font-size: 16px;
+  color: gray;
+  margin-top: 22px;
+}
+.progress-bar {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  height: 30px;
+  background-color: #7f525288;
+  border-radius: 15px;
+}
+.progress-value {
+  height: 100%;
+  background-color: green;
+  border-radius: 15px;
+  width: 0;
+  color: rgb(224, 214, 214);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.err-label {
+  color: rgba(255, 0, 0, 0.726);
+  font-size: 14px;
+  display: none;
+}
+.show-error .err-label {
+  display: block;
+}
+.goal-container {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid black;
+  height: 60px;
+  width: 96%;
+  margin-bottom: 40px;
+}
+.checkbox {
+  width: 30px;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.checkbox img {
+  display: none;
+  width: 65%;
+  margin: 9px 4.6px;
+}
+.checked .checkbox {
+  background-color: green;
+  border-color: green;
+}
+.checked .checkbox img {
+  display: block;
+}
+.goal-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding-left: 20px;
+  font-size: 20px;
+}
+/* .checked .goal-input{
+  color: green;
+  text-decoration: line-through;
+} */
+.goal-input::placeholder {
+  color: rgba(128, 128, 128, 0.769);
+}
+.quote {
+  font-weight: 400;
+  text-align: center;
+}
+footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 500;
+}
