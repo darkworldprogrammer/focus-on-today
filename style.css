@@ -1,164 +1,178 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 * {
-  margin: 0;
-  padding: 0;
-}
-body {
-  background-color: #7f525288;
-  margin: 16px;
-}
-body,
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 0;
-  padding: 0;
-}
-main {
-  margin: 16px;
-  font-family: poppins;
-  padding-bottom: 32px;
-}
-.container {
-  margin-inline: auto;
-  max-width: 850px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.title {
-  font-size: 64px;
-  color: green;
-}
-.title span {
-  color: rgb(86, 6, 6);
-}
-.app-container {
-  margin-top: 20px;
-  background-color: #fbfbfb;
-  max-width: 530px;
-  width: 100%;
-  border-radius: 15px;
-  padding: 20px 32px;
-  box-shadow: 0 0 4px black;
-}
-.app-h2 {
-  max-width: max-content;
-}
-/* .sun{
-  position: absolute;
-} */
-.sun-icon1 {
-  vertical-align: middle;
-  width: 35px;
-  position: relative;
-  animation: rotate 2000ms linear infinite;
+  box-sizing: border-box;
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+body {
+background-color: rgba(72, 163, 0, 0.07);
+font-family: 'Poppins', sans-serif;
+margin: 0;
 }
-.sun-icon2 {
-  left: 32.46%;
-  top: 23.95%;
-  width: 15px;
-  position: absolute;
+
+main {
+padding: 0 16px 32px;
 }
-.label {
-  font-size: 16px;
-  color: gray;
-  margin-top: 22px;
+
+.title {
+font-size: 64px;
+color: #48a300;
+text-align: center;
 }
+
+.title span {
+color: #61481c;
+}
+
+.app-container {
+background-color: #fbfbfb;
+max-width: 660px;
+margin-inline: auto;
+border-radius: 15px;
+padding: 32px 48px;
+box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.sun-icon {
+vertical-align: middle;
+margin-left: 16px;
+}
+
+.progress-label {
+font-size: 14px;
+color: #858585;
+margin-bottom: 20px;
+}
+
 .progress-bar {
-  margin-top: 20px;
-  margin-bottom: 30px;
-  height: 30px;
-  background-color: #7f525288;
-  border-radius: 15px;
+height: 30px;
+background-color: rgba(72, 163, 0, 0.1);
+border-radius: 15px;
+margin-bottom: 42px;
 }
+
 .progress-value {
-  height: 100%;
-  background-color: green;
-  border-radius: 15px;
-  width: 0;
-  color: rgb(224, 214, 214);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+height: 100%;
+width: 0;
+background-color: #48a300;
+border-radius: 15px;
+font-weight: 500;
+font-size: 10px;
+color: #eeffe0;
+display: flex;
+align-items: center;
+overflow: hidden;
+transition: width 0.2s ease-in-out;
 }
-.err-label {
-  color: rgba(255, 0, 0, 0.726);
-  font-size: 14px;
-  display: none;
+
+.progress-value span {
+padding-left: 20px;
+min-width: max-content;
 }
-.show-error .err-label {
+
+.error-label {
+font-size: 12px;
+color: #ff5151;
+margin-top: 4px;
+display: none;
+}
+
+.show-error .error-label {
   display: block;
 }
+
 .goal-container {
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
-  padding: 12px;
-  background-color: white;
-  border-radius: 15px;
-  border: 1px solid black;
-  height: 60px;
-  width: 96%;
-  margin-bottom: 40px;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 17px;
+height: 82px;
+display: flex;
+align-items: center;
+padding: 0 22px;
+background-color: #ffffff;
+margin-bottom: 42px;
 }
-.checkbox {
-  width: 30px;
-  height: 30px;
-  border: 2px solid;
-  border-radius: 50%;
-  cursor: pointer;
+
+.custom-checkbox {
+width: 24px;
+height: 24px;
+border: 2px solid rgba(97, 72, 28, 0.3);
+border-radius: 50%;
+flex-shrink: 0;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
 }
-.checkbox img {
+
+.check-icon {
   display: none;
-  width: 65%;
-  margin: 9px 4.6px;
 }
-.checked .checkbox {
-  background-color: green;
-  border-color: green;
+
+.goal-input {
+border: none;
+outline: none;
+padding-left: 22px;
+font-family: inherit;
+font-size: 16px;
+align-self: stretch;
+width: 100%;
+font-weight: 500;
 }
-.checked .checkbox img {
+
+.goal-input::placeholder {
+color: #d9d9d9;
+}
+
+.quote {
+font-weight: 500;
+text-align: center;
+}
+
+.made-with {
+font-weight: 500;
+font-size: 10px;
+text-align: center;
+color: #858585;
+margin-top: 64px;
+}
+
+.completed .custom-checkbox {
+  background: #48A300;
+  border-color: #48A300;
+}
+
+.completed .check-icon {
   display: block;
 }
-.goal-input {
-  border: none;
-  outline: none;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  padding-left: 20px;
-  font-size: 20px;
+
+.completed .goal-input {
+  color: #48A300;
+  text-decoration-line: line-through;
 }
-/* .checked .goal-input{
-  color: green;
-  text-decoration: line-through;
-} */
-.goal-input::placeholder {
-  color: rgba(128, 128, 128, 0.769);
+
+@media (max-width: 768px) {
+.title {
+  font-size: 32px;
 }
-.quote {
-  font-weight: 400;
-  text-align: center;
+
+.app-container {
+  padding: 16px 32px;
 }
-footer {
-  margin-top: 50px;
-  text-align: center;
-  font-size: 10px;
-  font-weight: 500;
+
+.goal-container {
+  height: 64px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+}
+
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.made-with {
+  margin-top: 32px;
+}
+
+.progress-bar {
+  height: 24px;
+}
 }
