@@ -1,77 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 @media (max-width: 768px) {
-  main {
-    margin: 16px;
-    font-family: poppins;
-    /* padding-bottom: 32px; */
-  }
-  .title {
-    font-size: 30px;
-  }
-  .app-h2 {
-    font-size: 22px;
-  }
-  .container {
-    margin-inline: auto;
-    max-width: 550px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .app-container {
-    margin-top: 20px;
-    background-color: #fbfbfb;
-    max-width: 260px;
-    width: 100%;
-    border-radius: 15px;
-    padding: 14px 16px;
-    box-shadow: 0 0 4px black;
-  }
-  .sun-icon2{
-    left: 43.93%;
-    top: 15.35%;
-    width: 15px;
-   position: absolute;
- }
- .checkbox img{
-  margin: 5px 2.4px;
- }
-  .progress-bar {
-    height: 20px;
-  }
-  .progress-value {
-    font-size: 10px;
-  }
-  .err-label {
-    font-size: 10px;
-    margin: 14px 0;
-    /* display: none; */
-  }
-  .goal-container {
-    padding: 12px;
-    background-color: white;
-    border-radius: 15px;
-    border: 1px solid black;
-    height: 30px;
-    width: 90%;
-    margin-bottom: 18px;
-  }
-  .checkbox{
-    width: 15px;
-    height: 15px;
-  }
-  .goal-input{
-    padding-left: 12px;
-  }
-  .quote{
-    font-weight: 400;
-    font-size: 13px;
-  }
-  footer{
-    margin-top: 25px;
-    font-size: 8px;
-  }
+.title {
+  font-size: 32px;
+}
+
+.app-container {
+  padding: 16px 32px;
+}
+
+.goal-container {
+  height: 64px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+}
+
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.made-with {
+  margin-top: 32px;
+}
+
+.progress-bar {
+  height: 24px;
+}
 }
